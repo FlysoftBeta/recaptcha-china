@@ -4,7 +4,7 @@ import Recaptcha from './components/Recaptcha';
 import RecaptchaState from './states/RecaptchaState';
 
 export default function () {
-  const isInvisible = app.data['fof-recaptcha.type'] === 'invisible';
+  const isInvisible = app.data['flysoft-beta-recaptcha-china.type'] === 'invisible';
 
   extend(SignUpModal.prototype, 'oninit', function () {
     this.recaptcha = new RecaptchaState(

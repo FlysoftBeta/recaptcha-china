@@ -36,7 +36,7 @@ export default class Recaptcha extends Component {
     });
 
     // It's possible to TAB into the reCAPTCHA iframe, and it's very confusing when using the invisible mode
-    if (app.data['fof-recaptcha.type'] === 'invisible') {
+    if (app.data['flysoft-beta-recaptcha-china.type'] === 'invisible') {
       const iframe = vnode.dom.querySelector('iframe');
 
       if (iframe) {

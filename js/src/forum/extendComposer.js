@@ -3,7 +3,7 @@ import RecaptchaState from './states/RecaptchaState';
 import Recaptcha from './components/Recaptcha';
 
 export default function (Composer) {
-  const isInvisible = app.data['fof-recaptcha.type'] === 'invisible';
+  const isInvisible = app.data['flysoft-beta-recaptcha-china.type'] === 'invisible';
 
   extend(Composer.prototype, 'oninit', function () {
     if (app.forum.attribute('postWithoutCaptcha')) {
