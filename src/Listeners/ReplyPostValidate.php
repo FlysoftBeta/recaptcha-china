@@ -40,7 +40,7 @@ class ReplyPostValidate
                 return;
             }
 
-            if ($event->actor->hasPermission('fof-recaptcha.postWithoutCaptcha')) {
+            if ($event->actor->hasPermission('flysoft-beta-recaptcha-china.postWithoutCaptcha')) {
                 return;
             }
 

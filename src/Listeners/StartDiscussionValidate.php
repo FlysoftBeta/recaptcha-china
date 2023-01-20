@@ -33,7 +33,7 @@ class StartDiscussionValidate
     public function handle(Saving $event)
     {
         if (!$event->discussion->exists) {
-            if ($event->actor->hasPermission('fof-recaptcha.postWithoutCaptcha')) {
+            if ($event->actor->hasPermission('flysoft-beta-recaptcha-china.postWithoutCaptcha')) {
                 return;
             }
 
