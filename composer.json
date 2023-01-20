@@ -38,12 +38,12 @@
   },
   "autoload": {
     "psr-4": {
-      "FoF\\ReCaptcha\\": "src/"
+      "flysoft-beta\\recaptcha-china\\": "src/"
     }
   },
   "extra": {
     "flarum-extension": {
-      "title": "FoF reCAPTCHA",
+      "title": "FoF reCAPTCHA China",
       "category": "feature",
       "icon": {
         "name": "fas fa-robot",
