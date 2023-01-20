@@ -14,8 +14,8 @@ namespace FlysoftBeta\ReCaptchaChina\Listeners;
 use Flarum\Foundation\AbstractValidator;
 use Flarum\Settings\SettingsRepositoryInterface;
 use Illuminate\Validation\Validator;
-use ReCaptchaChina\ReCaptcha;
-use ReCaptchaChina\RequestMethod\Post;
+use ReCaptcha\ReCaptcha;
+use ReCaptcha\RequestMethod\Post;
 
 class AddValidatorRule
 {
