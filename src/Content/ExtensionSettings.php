@@ -21,7 +21,7 @@ class ExtensionSettings
      */
     protected $settings;
 
-    protected $prefix = 'fof-recaptcha.';
+    protected $prefix = 'flysoft-beta-recaptcha-china.';
 
     protected $keys = ['credentials.site', 'type'];
 
