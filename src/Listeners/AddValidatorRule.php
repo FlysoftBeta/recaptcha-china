@@ -15,6 +15,7 @@ use Flarum\Foundation\AbstractValidator;
 use Flarum\Settings\SettingsRepositoryInterface;
 use Illuminate\Validation\Validator;
 use ReCaptcha\ReCaptcha;
+use ReCaptcha\RequestMethod\Post;
 
 class AddValidatorRule
 {
@@ -38,7 +39,7 @@ class AddValidatorRule
         $validator->addExtension(
             'recaptcha',
             function ($attribute, $value, $parameters) use ($secret) {
-                return !empty($value) && (new ReCaptcha($secret))->verify($value)->isSuccess();
+                return !empty($value) && (new ReCaptcha($secret, new Post('https://www.recaptcha.net/recaptcha/api/siteverify')))->verify($value)->isSuccess();
             }
         );
     }
