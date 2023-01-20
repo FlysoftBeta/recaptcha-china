@@ -4,7 +4,7 @@ import ReplyComposer from 'flarum/forum/components/ReplyComposer';
 import extendSignUp from './extendSignUp';
 import extendComposer from './extendComposer';
 
-app.initializers.add('fof/recaptcha', () => {
+app.initializers.add('flysoft-beta/recaptcha-china', () => {
   app.recaptchaLoaded = false;
 
   extendSignUp();

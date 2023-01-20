@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\ReCaptcha\Listeners;
+namespace FlysoftBeta\ReCaptchaChina\Listeners;
 
 use Flarum\Foundation\AbstractValidator;
 use Flarum\Settings\SettingsRepositoryInterface;
 use Illuminate\Validation\Validator;
-use ReCaptcha\ReCaptcha;
-use ReCaptcha\RequestMethod\Post;
+use ReCaptchaChina\ReCaptcha;
+use ReCaptchaChina\RequestMethod\Post;
 
 class AddValidatorRule
 {

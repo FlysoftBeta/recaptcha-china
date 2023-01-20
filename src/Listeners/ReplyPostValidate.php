@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\ReCaptcha\Listeners;
+namespace FlysoftBeta\ReCaptchaChina\Listeners;
 
 use Flarum\Post\Event\Saving;
-use FoF\ReCaptcha\Validators\RecaptchaValidator;
+use FlysoftBeta\ReCaptchaChina\Validators\RecaptchaValidator;
 use Illuminate\Support\Arr;
 
 class ReplyPostValidate

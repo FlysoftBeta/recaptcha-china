@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace FoF\ReCaptcha;
+namespace FlysoftBeta\ReCaptchaChina;
 
 use Flarum\Api\Serializer\ForumSerializer;
 use Flarum\Discussion\Event\Saving as DiscussionSaving;
 use Flarum\Extend;
 use Flarum\Post\Event\Saving as PostSaving;
 use Flarum\User\Event\Saving as UserSaving;
-use FoF\ReCaptcha\Listeners\AddValidatorRule;
-use FoF\ReCaptcha\Validators\RecaptchaValidator;
+use FlysoftBeta\ReCaptchaChina\Listeners\AddValidatorRule;
+use FlysoftBeta\ReCaptchaChina\Validators\RecaptchaValidator;
 
 return [
     (new Extend\Frontend('forum'))

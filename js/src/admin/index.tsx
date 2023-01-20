@@ -1,6 +1,6 @@
 import app from 'flarum/admin/app';
 
-app.initializers.add('fof/recaptcha', () => {
+app.initializers.add('flysoft-beta/recaptcha-china', () => {
   app.extensionData
     .for('fof-recaptcha')
     .registerSetting({
