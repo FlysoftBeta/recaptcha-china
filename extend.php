@@ -35,7 +35,7 @@ return [
 
     (new Extend\ApiSerializer(ForumSerializer::class))
         ->attribute('postWithoutCaptcha', function (ForumSerializer $serializer) {
-            return $serializer->getActor()->hasPermission('fof-recaptcha.postWithoutCaptcha');
+            return $serializer->getActor()->hasPermission('flysoft-beta-recaptcha-china.postWithoutCaptcha');
         }),
 
     (new Extend\Validator(RecaptchaValidator::class))
